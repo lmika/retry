@@ -12,8 +12,8 @@ import (
 func main() {
 	ctx := context.Background()
 
-	flagSleep := flag.Int("s", 2, "sleep between retries (0 = no sleep)")
-	flagMaxAttempt := flag.Int("n", 5, "max number of retries (0 = no max)")
+	flagSleep := flag.Int("s", 2, "sleep between retries, 0 = no sleep")
+	flagMaxAttempt := flag.Int("n", 0, "max number of attempts, 0 = no max")
 
 	flag.Parse()
 
